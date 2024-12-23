@@ -19,17 +19,18 @@ export const FormPanel = () => {
         const botToken = bot;
         const chatId = "ID кому присылать черз бота";
         const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
-    
-        axios.post(url, {
-            chat_id: chatId,
-            text: message,
-        })
-        .then((response) => {
-            console.log("Message sent to Telegram:", response.data);
-        })
-        .catch((error) => {
-            console.error("Failed to send message:", error);
-        });
+
+        axios
+            .post(url, {
+                chat_id: chatId,
+                text: message,
+            })
+            .then((response) => {
+                console.log("Message sent to Telegram:", response.data);
+            })
+            .catch((error) => {
+                console.error("Failed to send message:", error);
+            });
     };
 
     const onSubmit = (event) => {
@@ -57,10 +58,10 @@ export const FormPanel = () => {
             ФИО: ${client.value.trim()}
 Телефон: ${phoneNumber.value}
 Комментарий: ${comment.value}
-        `)
-        setComment("")
-        setClientName("")
-        setPhoneNumberInput("")
+        `);
+        setComment("");
+        setClientName("");
+        setPhoneNumberInput("");
     };
 
     const handlePhoneNumberInput = (event) => {
@@ -104,7 +105,7 @@ export const FormPanel = () => {
                         onSubmit={onSubmit}
                         className="w-[80%] h-5/6 p-10 grid grid-cols-1 grid-rows-[1fr_1fr_1fr_1fr] gap-4 px-4 items-center justify-center rounded-[45px] shadow-[4px_4px_4px_-1px_rgba(0,0,0,0.3)] bg-[#F2EFEF4D]"
                     >
-                        <label className="h-28 w-full border-4 rounded-3xl border-black bg-[#ACC5F8] hover:bg-[#9cb7ee] flex items-center justify-center">
+                        <label className="h-[100%] w-full border-4 rounded-3xl border-black bg-[#ACC5F8] hover:bg-[#9cb7ee] flex items-center justify-center">
                             <input
                                 className="w-full h-[90%] m-5 text-center text-5xl border-black bg-[#ACC5F8] hover:bg-[#9cb7ee] border-none outline-none focus:ring-0 placeholder:text-center placeholder:text-5xl placeholder:text-black focus:placeholder:text-transparent"
                                 type="text"
@@ -117,7 +118,7 @@ export const FormPanel = () => {
                                 required
                             />
                         </label>
-                        <label className="h-28 w-full rounded-3xl border-4 border-black bg-[#ACC5F8] hover:bg-[#9cb7ee] flex items-center justify-center">
+                        <label className="h-[100%] w-full rounded-3xl border-4 border-black bg-[#ACC5F8] hover:bg-[#9cb7ee] flex items-center justify-center">
                             <input
                                 ref={phoneInputRef}
                                 type="tel"
@@ -134,7 +135,7 @@ export const FormPanel = () => {
                                 required
                             />
                         </label>
-                        <label className="h-28 w-full border-4 rounded-3xl border-black bg-[#ACC5F8] hover:bg-[#9cb7ee] flex items-center justify-center">
+                        <label className="h-[100%] w-full border-4 rounded-3xl border-black bg-[#ACC5F8] hover:bg-[#9cb7ee] flex items-center justify-center">
                             <textarea
                                 className="resize-none text-3xl m-5 w-full h-[90%] box-border bg-[#ACC5F8] hover:bg-[#9cb7ee] focus:outline-none placeholder:p-6 placeholder:text-center placeholder:text-4xl placeholder:text-black focus:placeholder:text-transparent"
                                 onChange={({ target }) =>
@@ -147,7 +148,7 @@ export const FormPanel = () => {
                             />
                         </label>
                         <button
-                            className="h-28 w-full text-center text-3xl rounded-3xl border-4 border-black bg-[#907DFFB2] hover:bg-[#7b67ecb2]"
+                            className="h-[100%] w-full text-center text-3xl rounded-3xl border-4 border-black bg-[#907DFFB2] hover:bg-[#7b67ecb2]"
                             type="submit"
                         >
                             Отправить

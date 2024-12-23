@@ -12,22 +12,22 @@ export default function BottomPanel({}) {
         <div className="h-full w-[25%] justify-center flex">
           <div className="flex-col mr-auto ml-auto pt-9">
             <div className='w-full mb-24 flex text-center justify-center text-2xl font-vezla'><p>Партнёры</p></div>
-            <div className='w-full mb-12 flex text-center justify-center text-xl font-montserrat'><a href="https://vk.com/promvr">PROMVR</a></div>
-            <div className='w-full mb-12 flex text-center justify-center text-xl font-montserrat'><a href="https://vk.com/simbirsoft">SimbirSoft</a></div>
-            <div className='w-full mb-12 flex text-center justify-center text-xl font-montserrat'><a href="https://vk.com/vr_concept">Concept</a></div>
+            <div className='w-full mb-12 flex text-center justify-center text-xl font-montserrat hover:underline'><a href="https://vk.com/promvr">PROMVR</a></div>
+            <div className='w-full mb-12 flex text-center justify-center text-xl font-montserrat hover:underline'><a href="https://vk.com/simbirsoft">SimbirSoft</a></div>
+            <div className='w-full mb-12 flex text-center justify-center text-xl font-montserrat hover:underline'><a href="https://vk.com/vr_concept">Concept</a></div>
           </div>
         </div>
         <div className="h-full w-[25%] justify-center flex">
           <div className="flex-col mr-auto ml-auto pt-9">
             <div className='w-full mb-24 flex text-center justify-center text-2xl font-vezla'><p>Присоединиться</p></div>
-            <div className='w-full mb-12 flex text-center justify-center text-xl font-montserrat'><a href="https://forms.yandex.ru/u/6675601c5056905fa2d451bd/">Стать участником</a></div>
+            <div className='w-full mb-12 flex text-center justify-center text-xl font-montserrat hover:underline'><a href="https://forms.yandex.ru/u/6675601c5056905fa2d451bd/">Стать участником</a></div>
           </div>
         </div>
         <div className="h-full w-[25%] justify-center flex">
           <div className="flex-col mr-auto ml-auto pt-9">
-            <div className='w-full mb-24 flex text-center justify-center text-2xl font-vezla'><p>Социальные сети</p></div>
-            <div className='w-full mb-12 flex text-center justify-center text-xl font-montserrat'><a href="https://vk.com/metatory">Вконтакте</a></div>
-            <div className='w-full flex text-center justify-center text-xl font-montserrat'><a href="https://t.me/metatory">Телеграмм</a></div>
+            <div className='w-full mb-24 flex text-center justify-center text-2xl font-vezla hover:underline'><p>Социальные сети</p></div>
+            <div className='w-full mb-12 flex text-center justify-center text-xl font-montserrat hover:underline'><a href="https://vk.com/metatory">Вконтакте</a></div>
+            <div className='w-full flex text-center justify-center text-xl font-montserrat hover:underline'><a href="https://t.me/metatory">Телеграмм</a></div>
           </div>
         </div>
       </div>

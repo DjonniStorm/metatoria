@@ -5,7 +5,7 @@ export const CurrentProjects = () => {
     return (
         <div className="min-h-screen w-full flex flex-col gap-12 items-center">
             <a name="currentprojects"></a>
-            <div className="flex items-center justify-center w-full my-6">
+            <div className="flex items-center justify-center w-full">
                 <h2 className="text-6xl px-10">Текущие проекты</h2>
             </div>
             <div
@@ -50,9 +50,13 @@ export const CurrentProjects = () => {
                     </div>
                 </div>
             </div>
-            <button className="w-[40%] border-2 px-4 py-5 text-2xl rounded-md text-fuchsia-50 bg-[#907DFFB2] border-[#907DFF]">
+            <a
+                className="w-[40%] border-2 px-4 py-5 text-2xl text-center rounded-md text-fuchsia-50 bg-[#907DFFB2] border-[#907DFF] hover:bg-[#7e69f7b2]"
+                href="#formPanel"
+                alt="form"
+            >
                 Создать свою метавселенную
-            </button>
+            </a>
         </div>
     );
 };

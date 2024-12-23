@@ -12,7 +12,9 @@ export const OurTeam = () => {
         <div className="w-full h-screen">
             <a name="ourteam"></a>
             <div className="flex justify-center">
-                <h2 className="text-center text-6xl py-5">Наша команда</h2>
+                <h2 className="text-center text-6xl pb-16 pt-4">
+                    Наша команда
+                </h2>
             </div>
             <div className="grid grid-rows-[320px_320px] gap-10 px-10 py-0">
                 <ProfileCard

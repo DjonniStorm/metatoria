@@ -10,7 +10,7 @@ export const ProfileCard = ({ imgSource, className = "", person, role }) => (
             />
         </div>
         <div className="h-[30%] flex flex-col justify-center items-center px-2">
-            <h3 className="text-center max-w-24 text-[#1652D1] font-extrabold font-montserrat">
+            <h3 className="text-center max-w-32 text-[#1652D1] font-extrabold font-montserrat">
                 {person}
             </h3>
             <h5 className="text-center max-w-60 text-[#1652D1] font-normal pb-1">

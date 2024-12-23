@@ -1,8 +1,8 @@
 import Logo from "../../image/icons/icon.png";
 
 export const LinkPanel = () => (
-    <div className="p-10 flex flex-col items-center gap-10">
-        <div className="bg-[#F2EFEF1A] flex flex-col gap-20 items-center rounded-[45px] shadow-[4px_4px_4px_-1px_rgba(0,0,0,0.3)]  w-11/12 px-10 pb-10">
+    <div className="p-10 flex flex-col items-center gap-10 h-[70%]">
+        <div className="bg-[#F2EFEF1A] flex flex-col gap-20 items-center justify-center rounded-[45px] shadow-[4px_4px_4px_-1px_rgba(0,0,0,0.3)] min-h-[100%] w-11/12 px-10 pb-10">
             <div className="max-w-[20%]">
                 <img src={Logo} alt="logo" />
             </div>
@@ -20,7 +20,7 @@ export const LinkPanel = () => (
         </div>
         <div>
             <a href="#formPanel">
-                <button className="border-2 px-4 py-5 text-2xl rounded-md text-fuchsia-50 bg-[#907DFFB2] border-[#907DFF]">
+                <button className="border-2 px-4 py-5 text-2xl rounded-md text-fuchsia-50 bg-[#907DFFB2] border-[#907DFF] hover:bg-[#7e69f7b2]">
                     Оставить заявку
                 </button>
             </a>
